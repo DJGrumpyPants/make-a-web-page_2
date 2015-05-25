@@ -1,0 +1,72 @@
+h1 {
+	font-size: 30px;
+	text-align: center;
+	color: #050f19;
+}
+
+/*Setting a minimum and maximum width
+so that the text in my boxes dont get too long 
+horizontally or vertically*/
+body {
+	max-width: 1012px;
+	min-width: 862px;
+	background: #d6eaff;
+	font-size: .75em;
+}
+
+.flex {
+	display: flex;
+	-moz-display: flex;
+	-webkit-display: flex;
+	-ms-display: flex;
+}
+
+/*Each Week box will only contain otehr divs
+This div only creates the base for each week
+of study*/
+.week {	
+	background-color: white;
+	border: 5px solid black;
+	border-radius: 20px 20px;
+	margin: 5px;
+}
+
+/*Each Lesson box will contain the title of this 
+weeks lesson, and also the 'idea' and 'notes' divs*/
+.lesson {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: black;
+	margin: 10px;
+	min-width: 400px;
+}
+
+/*Each Idea I want to keep notes on should get its own div*/
+.idea {
+	font-weight: normal;
+	background-color: #3399ff;
+	color: black;
+	margin: 5px;
+}
+
+
+.notes {	
+	font-weight: normal;
+	background-color: #ff9933;	
+	color: black;
+}
+
+/*One 'Something to remember' per lesson is 
+ideal. This div will give it a background color
+that stands out.*/
+.remember {
+	font-weight: bold;
+	background-color: #99ff33;
+	color: black;
+	margin: 5px;
+}
+
+/*Use this to float pictures to the right*/
+.image_float_right {
+	float: right;
+}

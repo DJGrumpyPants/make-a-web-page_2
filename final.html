@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>John Christy's Notes on Intro to Programming</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<H1>John Christy's Notes on Intro to Programming</H1>
+		<div class="flex">
+			<div class="week">
+				<div class="lesson">
+					Lesson 1 - Basics of the Web
+					<div class="idea">
+						Hyper Text Markup Language 
+						<div class="notes">
+							Better known as HTML, this is the main document type of the web. It can contain Text content, markups, and references
+						</div>
+					</div>
+					<div class="idea">
+						The Four Basic Parts of The Web
+						<div class="notes">
+					        1. Browsers - This is a program run on your local computer.  It connects to remote sources and displays files from remote locations<br>
+					        2. The Internet - This is the magical cloud of wires and connections that gets your browser to the servers.<br>
+					        3. Markups - these modify the way text appears on  the page.<br>
+					    	4. Servers - Servers are computers optimized to serve files. The browser is showing files that are hosted on a given server.
+					    </div>
+					</div>
+					<div class="idea">
+						Markup Types
+						<div class="notes">
+							Markups can be <b>inline</b> like &lt;br&gt;, or <b>block</b> like &lt;p&gt;.<br>
+
+					        <b>Inline</b> markups modify an eliment in the HTML code
+					        <br>
+					        <b>Block</b> markups creates a box with a line break.  Nothing besides what is contained in the block markup can be displayed on the same line without some other conditional formatting like a flexbox.  
+					        <br>
+					        So a &lt;p&gt; (paragraph) would be contained inside a small box, and a piece of text that is made bold is inline.<br>
+						</div>
+					</div>
+					<div class="remember">
+						Something to Remember - Computers are Stupid
+						<div class="notes">
+							Remember that computers are stupid and can not make best guesses at what we want. Exact instructions are key!
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="week">
+				<div class="lesson">
+					Lesson 2 - Document Structure
+					<div class="idea">
+						HTML Files
+						<div class="notes">
+							HTML Files are the structure of a page, and should be considered a language. The HTML file will include all of the text, links, images, etc.  It is possible to do all of your styling in the HTML file, but the redundant code would get infuriating
+						</div>
+						<div class="notes">
+							A good way to think about HTML Files is the structure of a building.  It is the floor and walls that you can later paint.
+						</div>
+					</div>
+					<div class="idea">
+						CSS
+						<div class="notes">
+							CSS adds style to the HTML, and should also be considered a language. The CSS file allows you to create general style elements so that you can utilize them in the HTML code. Creating the elements in the CSS file allow you to use a single element line instead of typing all of the attributes of each "box."
+						</div>
+						<div class="notes">
+							For a good reference, check out the <a target="_blank" href="http://www.w3schools.com/css/">W3Schools.com</a> website for a great listing of CSS properties.
+						</div>
+					</div>
+					<div class="idea">
+						DOM
+						<div class="notes">
+							DOM stands for the <b>Document Object Model</b>, but can also be referred to as the <b>Tree Structure</b>. The structure refers to the way the browser creates and nests nodes in a tree like manner	
+						</div>
+					</div>
+					<div class="remember">
+						Something to Remember - Everything is a Rectangle!
+						<div class="notes">
+							Everything appearing in the browser should be considered as in a "box." These boxes are styles by the <b>CSS</b> or markups in the <b>HTML</b> file.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="week">
+			<div class="lesson">
+				Lesson 3 - Adding Style and Structure
+				<div class="idea">
+					Three Ways to Include Style
+					<div class="notes">
+						Add all style properties to the Header section of the HTML file.<br>
+						Add a link to a CSS stylesheet in the header.<br>
+						Write all style changes inline with the HTML and repeat and repeat and repeat...
+					</div>
+				</div>
+				<div class="idea">
+					The Box Model
+					<div class="notes">
+						<span class="image_float_right">
+							<img width="200" src="http://www.w3schools.com/css/box-model.gif" alt="A visual representation of the box model">
+						</span>
+						The Box model is a way to visualize the space any given object will take up.  It is made up of 4 parts:<br>
+						The	<b>Content</b> is the text, image, or other defined object at the center of the box model<br>
+						The <b>Padding</b> is the area between the content and the border.<br>
+						The <b>Border</b> is the definable line between the padding and the margin.<br>
+						The <b>Margin</b> is the transparent space on the outside of the border. 
+					</div>
+				</div>
+				<div class="idea">
+					Object Positioning
+					<div class="notes">
+						Positioning objects on the page is the most complicated part of coding for the web.<br>
+						One tool to help position boxes side by side is called <b>Flex</b><br>
+						Adding display:flex to the css for a DIV will put two boxes next to each other. This is necessary because by default, each DIV is a block element and takes the entire width of its parent element.<br>
+						For example, the two lesson note boxes above are in a DIV with the display:flex feature and appear side by side.  The box these notes are in does not have flex, and takes the entire width of the body element.  
+					</div>
+				</div>
+				<div class="idea">
+					Getting Validated
+					<div class="notes">
+						W3C offers a free HTML validator tool available <a target="_blank" href="https://validator.w3.org">HERE</a><br>
+						This site will review all of the code in your HTML page and look for errors in your code.  The page you are reading now had 17 errors that have all been resolved thanks to the tool.
+					</div>
+				</div>
+				<div class="remember">
+					Something to Remember - Code, Test, then refine
+					<div class="notes">
+						It is important to create a page in order.  The most efficient way to code is in the following order:<br>
+						1. Look for natural boxes in the page you are trying to code - These are where you should anticipate DIV's<br>
+						2. Look for repeated styles in the page - This is where you will create elements in CSS to reduce repetition in the HTML code<br>
+						3. Write HTML - Write all of the site code, inserting all of the proper Divs that you recognized earlier<br>
+						4. Apply Styles - Create the CSS to start painting the walls of the HTML building.<br>
+						5. Refine - Add spans, manipulate the margins, padding, etc.  Do what it takes to make the site look good.
+					</div>
+				</div>
+			</div>
+		</div>
+		<img src="http://www.w3.org/Icons/valid-html401" alt="W3C HTML Validation emblem">
+	</body>
+</html>
